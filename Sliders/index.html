@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Слайдер</title>
+<style>
+  .slider {
+    overflow: hidden;
+    width: 500px; 
+    height: 300px; 
+    position: relative; 
+  }
+  .slides {
+    display: flex;
+    text-align: center;
+  }
+  .slide {
+    flex: 1 0 500px; 
+    height: 100%; 
+  }
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide"><img src="cat1.jfif" alt="Slide 1"></div>
+    <div class="slide"><img src="cat2.jfif" alt="Slide 2"></div>
+    <div class="slide"><img src="cat3.jfif" alt="Slide 3"></div>
+  </div>
+  <div class="controls prev">&#10094;</div>
+  <div class="controls next">&#10095;</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelector('.slides');
+  const slideWidth = slides.querySelector('.slide').clientWidth;
+  let currentSlide = 0;
+  
+
+  document.querySelector('.prev').addEventListener('click', function() {
+    currentSlide = (currentSlide - 1 + slides.children.length) % slides.children.length;
+    goToSlide(currentSlide);
+  });
+
+  document.querySelector('.next').addEventListener('click', function() {
+    currentSlide = (currentSlide + 1) % slides.children.length;
+    goToSlide(currentSlide);
+  });
+
+  function goToSlide(index) {
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+});
+</script>
+
+</body>
+</html>

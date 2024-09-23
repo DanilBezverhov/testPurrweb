@@ -1,0 +1,733 @@
+body{
+    font-family: "Outfit", sans-serif;
+    
+    font-weight: 600;
+    font-style: normal;
+    margin:0 auto;
+    background-color: #181818;
+    color: white;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.menu{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    padding-right:1.5% ;
+}
+.menu:focus,
+.menu:active{
+    border-radius: 15px 15px 0px 0px;
+    background-color: #181818;
+    color: white;
+}
+.tabs{
+    background-color:#FFAA4C;
+    padding: 0.7%;
+}
+.logoname{
+    display: inline-block;
+    font-size: 37px;
+    color: white;
+    
+}
+.contact{
+    background-color:#954CED;
+    border: 0px;
+    border-radius:20px;
+    color: white;
+    padding: 1%;
+    font-size:20px;
+    font-weight: 600;
+    float: right;
+    margin-top: 3%;
+}
+.contact_main{
+    background-color:#954CED;
+    border: 0px;
+    border-radius:20px;
+    color: white;
+    padding: 1%;
+    font-size:20px;
+    font-weight: 600;
+}
+.maininline{
+    display: inline-block;
+    
+}
+.maininfo{
+    font-size: 96px;
+}
+.inlinefloat{
+    float: left;
+}
+.textabout{
+    font-size:36px;
+}
+.aboutinfo{
+    font-size: 96px;
+}
+.imgposition{
+    background-image: url('/img/photo2.svg');
+    font-size:36px;
+    
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.wrapperdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.infoabout{
+    font-size: 48px;
+    margin-top: 2%;
+}
+.pinfoabout{
+    font-size: 24px;
+}
+.width-100{
+  max-width: 100%;
+}
+.aboutBudss{
+    background-image: url(/img/icon.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.slider{
+    position: relative;
+    width: 100%; 
+    height: 300px; 
+    overflow: hidden;
+    display: inline-block;
+  }
+  .blocks {
+    position: absolute;
+    animation: moveBlocks 5s linear infinite; 
+  }
+  .blocksright {
+    position: absolute;
+    animation: moveBlocksRight 5s linear infinite;
+    
+    
+  }
+  @keyframes moveBlocksRight {
+    0% {
+        right: -2200px;
+    }
+    100% {
+        right: calc(100% + 50px);
+    }
+  }
+  .block {
+    width: auto; 
+    height: 50px; 
+    border-radius: 50%; 
+    
+    white-space: nowrap;
+  }
+  
+  @keyframes moveBlocks {
+    0% {
+        left: -2200px;
+    }
+    100% {
+        left: calc(100% + 50px);
+    }
+  }
+  .block:nth-child(1) {
+    animation: fadeInOut 5s linear infinite 0s; 
+  }
+  .block:nth-child(2) {
+    animation: fadeInOut 5s linear infinite 1s; 
+  }
+  .block:nth-child(3) {
+    animation: fadeInOut 5s linear infinite 2s; 
+  }
+  .blackBudss{
+    color: black;
+    text-shadow: 0 0 2px white; 
+    margin-right: 1000%;
+  }
+  .howbudsswork{
+    color: #2FDBBC;
+    font-size: 128px;
+    white-space: nowrap;
+  }
+  .phone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .blackBudss{
+    text-shadow: 0 0 2px white; 
+    margin-right: 1000%;
+    font-size: 128px;
+    white-space: nowrap;
+    color:black;
+  }
+  .orangeBudss{
+    text-shadow: 0 0 2px white; 
+    margin-right: 1000%;
+    font-size: 128px;
+    white-space: nowrap;
+    color:#FFAA4C;
+  }
+  .purpleBudss{
+    text-shadow: 0 0 2px white; 
+    margin-right: 1000%;
+    font-size: 128px;
+    white-space: nowrap;
+    color:#A64CED;
+  }
+  .sliders{
+    position:relative;
+  }
+  .percentsdiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin:0 auto;
+  }
+  .percentp{
+    font-size: 64px;
+  }
+  .percenttext{
+    font-size: 24px;
+  }
+  .percent{
+    background-color: #954CED;
+  }
+  .budssAd{
+    text-align: center;
+    font-size: 64px;
+  }
+  .budssAdText{
+    font-size: 36px;
+    text-align: center;
+  }
+  .growBus{
+    background: url(/img/photo2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .whyBudssgrid{
+    display: grid;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    max-width: 1440px;
+    margin:0 auto;
+  }
+  .whyBudssgridFix{
+    display: grid;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+   
+    
+    margin:0 auto;
+  }
+  .whyBudssAd{
+    
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch; 
+    
+    
+    background-color: #F9F9F9;
+  }
+  .whyBudssAdFix{
+    
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    margin:3%; 
+    
+    
+    background-color: #F9F9F9;
+  }
+  .budssblock {
+    max-height: 352px; 
+    overflow: visible; 
+  }
+  .budssBlockNewFix {
+    max-height: 100%; 
+    overflow: visible; 
+  }
+  .budssblockNew {
+    max-height: 352px; 
+    overflow: hidden; 
+    position: absolute;
+  }
+  .budssblock h1{
+    font-size: 48px;
+    white-space: nowrap;
+    margin:0 auto;
+    
+  }
+ 
+  .budssblock p{
+    font-size: 20px;
+    margin:0 auto;
+    
+    max-width: 100%;
+  }
+  .whyBudssAd:nth-child(1) {   
+    max-width: 94%; 
+}
+
+
+.whyBudssAd:nth-child(2) {
+    max-width: 100%;
+}
+  .whyBudssAdFix:nth-child(1) {   
+    max-width: 96%; 
+}
+
+
+
+.width-83{
+  max-width: 83%;
+  margin: 0 auto;
+}
+.whyBudssAd *{
+  color:black;
+  margin: 0 auto;
+}
+.whyBudssAdFix *{
+  color:black;
+  margin: 0 auto;
+}
+.whyBudssAdFixNew *{
+  color:black;
+  margin: 0;
+  
+}
+.budssRelative{
+  position: relative;
+  overflow: visible;
+}
+.turquoisepacket{
+  position: absolute;
+  top: 151%;
+  
+ 
+}
+.purplepacket{
+  position: absolute;
+  top: 33%;
+  left: 89%;
+  
+ 
+}
+.orangepacket{
+  position: absolute;
+  left: 75%;
+  top: 140%;
+  
+ 
+}
+.BudssDiv{
+  margin-top: 2%;
+}
+.ad{
+  background-color: #F5F5F5;
+}
+.purpleCircle{
+  position: absolute;
+  left: 130%;
+  top: 23%;
+}
+.whyBudssAdnew{
+    
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch; 
+  background-color: #F9F9F9;
+  max-width: 100%;
+}
+.like{
+  overflow: visible;
+  margin-top: 130%;
+  margin-left: -51%;
+  
+
+}
+.ad{
+  color:#181818;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  margin: 0 auto;
+  background-color: #F9F9F9;
+}
+.contactMod{
+  background-color:#954CED;
+  border: 0px;
+  border-radius:20px;
+  color: white;
+  padding: 1.5%;
+  font-size:20px;
+  font-weight: 600;
+  
+}
+.gridSoc{
+  display:flex;
+  
+}
+.gridSoc picture{
+  margin-top: 10%;
+  padding: 2%;
+  
+}
+.contactwithus{
+  color: #181818;
+  background-color: #F9F9F9;
+  text-align: center;
+  
+}
+.contactwithus h1{
+  font-size: 64px;
+  
+}
+.brand{
+  font-size: 94px;
+}
+.twitter{
+  margin-top: 100%;
+}
+.tiktok{
+  margin-top: 100%;
+}
+.soc{
+  
+  font-size: 20px;
+}
+.max-width{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  left: 20%;
+  background-color: #FFFFFF;
+  color: #383838;
+  font-size:20px;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  
+}
+.cookie-consent div{
+  display: inline-block;
+}
+
+.cookie-consent p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+  
+
+}
+
+.cookie-consent button {
+  background-color: white;
+  color: black;
+  border: 2px solid #954CED;
+  padding: 8px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  
+  
+}
+
+
+.cookie-consent button:hover {
+  background-color: #954CED;
+  color: #F5F5F5;
+}
+.newGrid{
+  margin-left: 5%;
+}
+.menuFix{
+  
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    padding-right:1.5% ;
+    
+
+}
+.contactFix{
+  background-color:#954CED;
+  border: 0px;
+  border-radius:20px;
+  color: white;
+  padding: 1%;
+  font-size:20px;
+  font-weight: 600;
+  margin: 2%;
+ 
+ 
+}
+.logoFix{
+  padding-left: 5%;
+}
+.copy{
+  font-size: 14px;
+  color: #B9B9B9;
+}
+.footerinline div{
+  display: inline-block;
+  color:#B9B9B9;
+}
+.priv{
+  margin-right: 10%;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #181818;
+  
+}
+.success {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fefefe;
+  color: #181818;
+  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 35%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.photo1Svg{
+  max-width: 100%;
+}
+@media screen and (max-width: 1435px) {
+  .ad{
+    display: flex;
+    flex-direction: column;
+  }
+  .cookie-consent{
+    left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 1265px) {
+  .percentsdiv{
+    text-align: center;
+  }
+  body {
+      font-size: 14px; 
+  }
+  .maininfo{
+    font-size: 48px;
+  }
+  .purplepacket{
+    display: none;
+  }
+  
+  .purpleCircle{
+    position: static;
+  }
+  .twitter{
+    margin-top: 40%;
+    
+  }
+  .tiktok{
+    margin-top: 40%;
+
+  }
+
+  
+  .container {
+      padding: 0 10px; 
+  }
+  .whyBudssgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .whyBudssAd{
+    display: flex;
+    flex-direction: column;
+  }
+  .whyBudssgridFix{
+    display: flex;
+    flex-direction: column;
+  }
+  .whyBudssgridFix{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutBudss{
+    display: inline;
+  }
+  .aboutinfo{
+    font-size: 60px;
+  }
+  .aboutdivone{
+    display: inline;
+  }
+  .aboutdivtwo{
+    display: inline;
+  }
+  .aboutdivthree{
+    display: inline;
+  }
+  .contact{
+    display:none;
+  }
+  .wrapperdiv {
+    display: flex;
+    flex-direction: column;
+}
+.percentsdiv{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.gridAd{
+  display: flex;
+  flex-direction: column;
+}
+.fixSoc{
+  display: flex;
+  flex-direction: column;
+}
+.brand{
+  font-size: 30px;
+}
+.soc{
+  font-size: 14px;
+}
+.ad{
+  display: flex;
+  flex-direction: column;
+}
+.gridSoc{
+  display: flex;
+  flex-direction: column;
+}
+.fixSoc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cookie-consent{
+  left: 0%;
+  max-width: 95%;
+}
+.contactwithus h1{
+  font-size: 40px;
+}
+#budssBlock1{
+  order: 1;
+}
+#budssBlock2{
+  order: 2;
+}
+.whyBudssAd:nth-child(1) {   
+  max-width: 100%;
+  margin: 2%; 
+}
+.whyBudssAdFix{   
+  max-width: 100%; 
+  display: flex;
+  flex-direction:column;
+  margin:1px;
+}
+.whyBudssAd *{   
+  margin: 0 ;
+}
+.budssBlock{
+  max-height: 571px;
+  
+}
+.like{
+  margin-top:0%;
+  margin-left: 64%;
+  
+  margin-right: 0%;
+}
+.turquoisepacket{
+  position: static;
+}
+.purplepacket{
+  position: static;
+  margin-left: 34%;
+}
+.orangepacket{
+  position: static;
+}
+.whyBudssgrid{
+  margin:2%;
+}
+    .howbudsswork{
+    color: #2FDBBC;
+    font-size: 90px;
+    white-space: nowrap;
+  }
+}
